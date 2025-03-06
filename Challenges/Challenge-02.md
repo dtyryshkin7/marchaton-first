@@ -35,9 +35,9 @@ resource "spaceship_crew_member" "elena_kim" {
 - Each crew member has their folder in the repo added via pull request
 
 
-> [!TIP]
-> - You don't need to create Codespaces per branch, just create it on main. You can create branches and do pull requests within the codespace.
-> - Review pull requests in GitHub UI, there it is implemented better, Codespaces are a bit confusing.
+### Hints
+- You don't need to create Codespaces per branch, just create it on main. You can create branches and do pull requests within the codespace.
+- Review pull requests in GitHub UI, there it is implemented better, Codespaces are a bit confusing.
 
 ## Learning Resources
 
