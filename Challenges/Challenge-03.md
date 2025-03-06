@@ -1,48 +1,48 @@
-# Challenge 03 - Make spaceship great again
+# Challenge 03 - Code Against the Storm
 
-[< Previous Challenge](Challenge-02.md) - [Home](../README.md) - [Next Challenge >](Challenge-04.md)
+[< Previous Challenge](Challenge-02.md) - [Home](../README.md)
 
 ## Introduction
 
-The Quantum Seeker had successfully launched into the vastness of space, leaving Earth behind as it headed toward the Alpha Centauri system. The crew was settling into their routines, the hum of the ship's systems providing a comforting background noise. Captain Amina Valdez, who had led the mission with unwavering confidence, was overseeing the ship's navigation from the bridge. However, just a few hours into their journey, Captain Valdez began to feel unwell. At first, she dismissed it as mere fatigue from the intense preparations and launch, but the symptoms quickly escalated. She felt dizzy, her vision blurred, and a sharp pain shot through her head and she fainted. A hushed silence fell over the room. The weight of the situation was palpable. The mission was too critical to be jeopardized, and they needed a new leader to guide them through the unknowns of deep space. 
+The Quantum Seeker had been sailing smoothly through the dark expanse of space for weeks, its mission to explore the Alpha Centauri system progressing as planned. The new captain, Jackson Carter, had quickly earned the respect and trust of his team, guiding them with a steady hand. However, the tranquility of their journey was about to be shattered. The ship's advanced sensors detected an anomaly in the distance—a massive cosmic storm, a phenomenon known to be both unpredictable and dangerous. Captain Carter was on the bridge when the alarm sounded.
 
-  <img src="images/captain.png" width="512"/>
+"Captain, we're picking up intense electromagnetic activity ahead," reported Lieutenant Sarah Thompson, the ship's navigator. "It looks like a cosmic storm, and it's headed straight for us."
+
+Captain Carter's face hardened. He knew the severity of such storms; they could wreak havoc on the ship's systems and endanger the crew. "How long until it reaches us?" he asked.
+
+"Approximately six hours, sir," replied Thompson.
+
+"We need to make sure our IT infastructure sustains the storm" Carter instructed.
+
+He knew, there is only way to achieve it - to define Infrastructure as Code.
+
+<img src="images/spaceship-iac.png" width="512"/>
 
 ## Description
 
-Spaceship mission is too important to have crucial code being distributed here and there. Let's follow a consolidated approach.
-
-- First, define a person who is going to be hosting a central repo for the team and agree on the name of the repo (hint: name of your spaceship!)
-- Then, make sure **main** branch of the spaceship is protected from pushes by any of the crew members. We can't afford such risks.
-- Finally, all crew members should create their **own** **folders** containing crew member data in that repo (remember, no direct pushes!)
-
-Example:
-
-MyRepo/ElenaKim/profile.md
-
-```hcl
-resource "spaceship_crew_member" "elena_kim" {
-  name        = "Elena Kim"
-  experience  = "15 years"
-  specialty   = "Space Medicine"
-}
-```
-
+- First, install Terraform on your Codespace using [script](../Files/terraform-install.sh). Ask your Linux-experienced team members on how to run a bash script on a Linux machine.
+- Then, check your access to [Azure Portal](https://portal.azure.com)- you should see "rbhq-inf-marchaton-s" subscription.
+- Configure environment variables in your codespace using provided [values](../Files/envs.md). 
+- Copy [.gitignore](../Files/.gitignore) to the root folder of your repo. That that will make git keep sensitive files away from being commited to the repository.
+- Create an Azure resource group per crew member via Azure Portal. Delete it. Try doing the same via Code. Portal was easier, right? Can you imagine deploying 10 resource groups via portal? And what about code?
+  
 ## Success Criteria
 
-- There is a central repo for team
-- Main branch is protected from direct push and pull request requires minimum 2 reviewers to be approved!
-- Each crew member has their folder in the repo added via pull request
+- You have a resource group within rbhq-inf-marchaton-s Azure subscription per crew member created via Terraform
+- Terraform code of the resource group is available in your personal folder within team crew repository.
+- ***Optional*** If you have spare time, be curious! Try destroying the resource group via terraform, changing its name and see what happends, try deploying several groups at once!
 
-## Hint
 
-- Review pull requests in GitHub UI, there it is implemented better, Codespaces are a bit confusing.
+## Troubleshooting
+
+- If you have an issue with a commit of a big file - you forgot **gitignore file** (see above)
 
 ## Learning Resources
 
-- [Manage branch protection](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule)
-- [Inviting collaborators to a personal repository](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)
-- [Creating a pull request in Codespaces](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request?tool=codespaces)
-
-
-[< Previous Challenge](Challenge-02.md) - [Home](../README.md) - [Next Challenge >](Challenge-04.md)
+- [Azure Portal](https://portal.azure.com)
+- [What is Azure Resource Group? Creating via Portal](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#what-is-a-resource-group)
+- [Authenticate to Azure with Terraform](https://learn.microsoft.com/en-us/azure/developer/terraform/authenticate-to-azure-with-service-principle?tabs=bash#specify-service-principal-credentials-in-environment-variables)
+- [Terraform gitignore](https://github.com/github/gitignore/blob/main/Terraform.gitignore)
+- [Terraform Cheat Sheet](https://spacelift.io/blog/terraform-commands-cheat-sheet)
+- [Terraform project structure explained](https://spacelift.io/blog/terraform-files)
+- [Azure Terraform Provider Example - create resource group](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs#example-usage)
