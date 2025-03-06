@@ -36,8 +36,8 @@ resource "spaceship_crew_member" "elena_kim" {
 
 
 > [!TIP]
-> You don't need to create Codespaces per branch, just create it on main. You can create branches and do pull requests within the codespace.
-> Review pull requests in GitHub UI, there it is implemented better, Codespaces are a bit confusing.
+> - You don't need to create Codespaces per branch, just create it on main. You can create branches and do pull requests within the codespace.
+> - Review pull requests in GitHub UI, there it is implemented better, Codespaces are a bit confusing.
 
 ## Learning Resources
 
