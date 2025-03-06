@@ -13,7 +13,7 @@ The Quantum Seeker had successfully launched into the vastness of space, leaving
 Spaceship mission is too important to have crucial code being distributed here and there. Let's follow a consolidated approach.
 
 - First, define a person who is going to be hosting a central repo for the team and agree on the name of the repo (hint: name of your spaceship!)
-- Then, make sure **main** branch of the spaceship is protected from pushes by any of the crew members. We can't afford such risks.
+- Next, ensure that the **main** branch of the spaceship repository is protected to prevent any crew members from bypassing the Pull Request process. We cannot afford to take such risks.
 - Finally, all crew members should create their **own** **folders** containing crew member data in that repo (remember, no direct pushes!)
 
 Example:
