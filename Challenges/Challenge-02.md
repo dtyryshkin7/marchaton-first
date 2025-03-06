@@ -34,9 +34,9 @@ resource "spaceship_crew_member" "elena_kim" {
 - Main branch is protected from direct push and pull request requires minimum 2 reviewers to be approved!
 - Each crew member has their folder in the repo added via pull request
 
-## Hint
-
-- Review pull requests in GitHub UI, there it is implemented better, Codespaces are a bit confusing.
+< [!TIP]
+< You don't need to create Codespaces per branch, just create it on main. You can create branches and do pull requests within the codespace.
+< Review pull requests in GitHub UI, there it is implemented better, Codespaces are a bit confusing.
 
 ## Learning Resources
 
