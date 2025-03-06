@@ -33,9 +33,8 @@ He knew, there is only way to achieve it - to define Infrastructure as Code.
 - ***Optional*** If you have spare time, be curious! Try destroying the resource group via terraform, changing its name and see what happends, try deploying several groups at once!
 
 
-## Troubleshooting
-
-- If you have an issue with a commit of a big file - you forgot **gitignore file** (see above)
+> [!WARNING]
+> If you have an issue with a commit of a big file - you forgot **gitignore file** (see above)
 
 ## Learning Resources
 
