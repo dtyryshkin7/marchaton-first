@@ -22,11 +22,9 @@ By the end of this workshop, you will have a solid understanding of collaborativ
 ## Challenges
 - Challenge 1: **[Get onboard, the spaceship is taking off!](Challenges/Challenge-01.md)**
    - Setting up necessary prerequisites - GitHub handle, first repo, Codespace.
-- Challenge 2: **[The Great Engine Lockout](Challenges/Challenge-02.md)**
-   - Doing first steps into coding - forking and pushing with no casualties
-- Challenge 3: **[Make Spaceship Great Again](Challenges/Challenge-03.md)**
+- Challenge 2: **[Make Spaceship Great Again](Challenges/Challenge-02.md)**
    - Creating a shared repo, learning branch protection and what pull request is
-- Challenge 4: **[Code Against the Storm](Challenges/Challenge-04.md)**
+- Challenge 3: **[Code Against the Storm](Challenges/Challenge-03.md)**
    - Getting ready for an upcoming storm with IaC
 
 ## Contributors
