@@ -32,7 +32,7 @@ resource "spaceship_crew_member" "elena_kim" {
 
 - There is a central repo for team
 - Main branch is protected from direct push, and pull request requires minimum 2 reviewers to be approved!
-- Each crew member has their folder in the repo added via pull request
+- Each crew member has their folder containing crew member data in the repo added via pull request
 
 
 ### Hints
