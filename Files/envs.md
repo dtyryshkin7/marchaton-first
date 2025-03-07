@@ -6,3 +6,6 @@ Set this environmental variables in your codespace (https://github.com/settings/
 - ARM_SUBSCRIPTION_ID="a6e90f5d-2764-44f1-a13b-fe8c9a5eb6b7"
 - ARM_CLIENT_ID="757c8028-da5b-43ff-ab70-6d57b2d41c73"
 - ARM_CLIENT_SECRET="CHANGEMEUSINGSECRETSHARE"
+
+
+123
