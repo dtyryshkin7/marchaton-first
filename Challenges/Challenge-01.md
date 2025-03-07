@@ -38,6 +38,6 @@ resource "spaceship_crew_member" "elena_kim" {
 ## Learning Resources
 
 - [GitHub.com](https://github.com/)
-- [What are GitHub Codespaces?]([https://docs.github.com/en/codespaces/overview](https://docs.github.com/en/codespaces/getting-started/quickstart))
+- [What are GitHub Codespaces?](https://docs.github.com/en/codespaces/getting-started/quickstart/)
 - [Staging and commiting code changes](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git#_staging-and-committing-code-changes)
 
